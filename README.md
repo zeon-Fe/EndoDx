@@ -4,13 +4,28 @@
 
 ---
 
-## ### Background
+## Prototype Preview
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/546b3b43-01cd-42d5-a37a-9a4d1604d489" width="450" alt="EndoDx Screenshot 1"/></td>
+    <td><img src="https://github.com/user-attachments/assets/d7a72421-5708-4b8f-a9c3-5c8f8e55068c" width="450" alt="EndoDx Screenshot 2"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/2243f141-f8cd-4337-84fc-444acca38d98" width="450" alt="EndoDx Screenshot 3"/></td>
+    <td><img src="https://github.com/user-attachments/assets/7d00e828-523f-4d49-a4d4-3753cffc26b9" width="450" alt="EndoDx Screenshot 4"/></td>
+  </tr>
+</table>
+
+---
+
+## Background
 
 Endometriosis is a complex, often misdiagnosed gynecological condition affecting approximately 10% of reproductive-age women. Diagnosis typically involves invasive procedures and lengthy delays due to the variability of symptoms and lack of reliable screening tools. This project investigates how machine learning can support faster, non-invasive risk assessment based on symptom data alone.
 
 ---
 
-## ### Project Goals
+## Project Goals
 
 - Explore machine learning approaches to classify endometriosis risk.
 - Evaluate both traditional and advanced models.
@@ -19,7 +34,7 @@ Endometriosis is a complex, often misdiagnosed gynecological condition affecting
 
 ---
 
-## ### Methodology
+## Methodology
 
 The project builds upon the **EndoDetect** dataset, focusing solely on self-reported symptoms. The following models were trained and evaluated:
 
@@ -28,7 +43,7 @@ The project builds upon the **EndoDetect** dataset, focusing solely on self-repo
 
 ### Feature Selection Strategies
 
-1. **Unified Statistical Baseline** (e.g., chi-square)
+1. **Unified Statistical Baseline** (e.g., chi-square)  
 2. **Model-Specific Optimization** (e.g., recursive feature elimination)
 
 ### Evaluation Metrics
@@ -41,9 +56,9 @@ The project builds upon the **EndoDetect** dataset, focusing solely on self-repo
 
 ---
 
-## ### Results
+## Results
 
-The **Support Vector Machine (SVM)** achieved the highest performance:
+The **Support Vector Machine (SVM)** achieved the highest performance among 3 tested Models:
 
 - **F1 Score**: 0.9524  
 - **AUC**: 0.9852  
@@ -52,30 +67,23 @@ Grouped features reduced performance, emphasizing the importance of detailed, gr
 
 ---
 
-## ### Application: EndoDx Prototype
+## Application: EndoDx Prototype
 
 The best-performing model was integrated into a user-facing web application — **EndoDx** — built to showcase the feasibility of real-world deployment. Users input symptoms via a structured form, and the application returns a model-predicted risk score.
 
 ---
 
-## ### Key Contributions
+## Key Contributions
 
-- Demonstrates the effectiveness of machine learning in symptom-only risk screening.
-- Offers a scalable and accessible approach to reduce diagnostic delays.
-- Combines robust modelling techniques with a practical, user-friendly interface.
-
----
-
-## ### Technologies Used
-
-- Python (scikit-learn, XGBoost)
-- Streamlit (for prototype deployment)
-- pandas, NumPy, matplotlib (for data processing and visualization)
+- Demonstrates the effectiveness of machine learning in symptom-only risk screening.  
+- Offers a scalable and accessible approach to reduce diagnostic delays.  
+- Combines robust modelling techniques with a practical, user-friendly interface.  
 
 ---
 
-<img width="940" height="487" alt="image" src="https://github.com/user-attachments/assets/546b3b43-01cd-42d5-a37a-9a4d1604d489" />
-<img width="940" height="490" alt="image" src="https://github.com/user-attachments/assets/d7a72421-5708-4b8f-a9c3-5c8f8e55068c" />
-<img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/2243f141-f8cd-4337-84fc-444acca38d98" />
-<img width="940" height="490" alt="image" src="https://github.com/user-attachments/assets/7d00e828-523f-4d49-a4d4-3753cffc26b9" />
+## Technologies Used
+
+- Python (scikit-learn, XGBoost)  
+- Streamlit (for prototype deployment)  
+- pandas, NumPy, matplotlib (for data processing and visualization)  
 
